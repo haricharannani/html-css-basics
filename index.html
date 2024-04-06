@@ -1,29 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple CSS Example</title>
+    <style>
+        /* Internal CSS */
+        .container {
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            animation: slidein 2s ease-in-out infinite alternate;
+        }
+
+        /* Keyframes for animation */
+        @keyframes slidein {
+            0% { transform: translateX(-100px); }
+            100% { transform: translateX(100px); }
+        }
+    </style>
+    <link rel="stylesheet" href="external.css">
 </head>
-
 <body>
-
-  <div class="container">
-
-    <div class="div1">
-      <p>Hello world how are you, i'm good <br>
-        where are you from</p>
+    <div class="container" style="border: 2px solid green;">
+        <p style="color: red; font-size: 20px;">Inline CSS Example</p>
     </div>
-
-  </div>
-
-  <div class="afd">
-
-  </div>
-
-
 </body>
-
 </html>
