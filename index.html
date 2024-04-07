@@ -1,29 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="./index.css">
+  <style>
+    .div2{
+      color: red;
+      background-color: yellow;
+    }
+    .head1{
+      color:white;
+      background-color: black;
+    }
+  </style>
 </head>
-
-<body>
-
+<body style="background-color:green">
+  <h1 class="head1">Hello SRP</h1>
   <div class="container">
-
+    <p id="id1">This is the outer-most Division</p>
     <div class="div1">
-      <p>Hello world how are you, i'm good <br>
+      <p style="color:red">Hello world <br>How are you, i'm good <br>
         where are you from</p>
+      <a href="https://www.youtube.com/" target="_blank"><img src="./images.png" alt="Image cannot be displayed"></a>
+      <div>
+        <img src="https://www.google.com/imgres?q=images&imgurl=https%3A%2F%2Fcdn.pixabay.com%2Fphoto%2F2015%2F04%2F23%2F22%2F00%2Ftree-736885_1280.jpg&imgrefurl=https%3A%2F%2Fpixabay.com%2Fimages%2Fsearch%2Flandscape%2F&docid=xUQE6fK4DV4_SM&tbnid=aVgXecnmQ_f1MM&vet=12ahUKEwjhv-yu_q2FAxW8UWcHHYV0D8oQM3oECBoQAA..i&w=1280&h=797&hcb=2&itg=1&ved=2ahUKEwjhv-yu_q2FAxW8UWcHHYV0D8oQM3oECBoQAA" id="image1">
+        <button class="div3" onclick="abc()">Change Image</button><br>
+        <a href="https://www.hackerrank.com/domains/algorithms?filters%5Bstatus%5D%5B%5D=unsolved&badge_type=problem-solving" target="_blank">Hackerrank Algorithms</a>
+        <!-- <img src="./images.png" alt="Image cannot be displayed"> -->
+      </div>
+      <p style="text-align: center;">Login</p>
+      <p>Username:</p>
+      <input style="height: 40px;" type="text">
+      <p>Password:</p><input style="height: 32px;"type="password">
     </div>
-
   </div>
 
-  <div class="afd">
+  <!-- <div class="afd">
 
-  </div>
-
-
+  </div> -->
+  <script>
+    function abc(){
+      document.getElementById("image1").src="https::/www.google.com/imgres?q=images&imgurl=https%3A%2F%2Fimg.freepik.com%2Ffree-photo%2Fpainting-mountain-lake-with-mountain-background_188544-9126.jpg&imgrefurl=https%3A%2F%2Fwww.freepik.com%2Ffree-photos-vectors%2Fbackground&docid=bKJ3gdlWTtaNoM&tbnid=ASMDFNsL7Vw1YM&vet=12ahUKEwjhv-yu_q2FAxW8UWcHHYV0D8oQM3oECGEQAA..i&w=626&h=358&hcb=2&ved=2ahUKEwjhv-yu_q2FAxW8UWcHHYV0D8oQM3oECGEQAA";
+    }
+  </script>
 </body>
-
 </html>
